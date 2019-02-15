@@ -18,7 +18,7 @@
 
 # set to latest Ubuntu LTS
 FROM wso2sp-base:4.3.0-alpine
-MAINTAINER WSO2 Docker Maintainers "dev@wso2.org"
+MAINTAINER Join Treinamentos e Governanca Team "training@jointreinamentos.com.br"
 
 # copy entrypoint bash script to user home
 COPY --chown=wso2carbon:wso2 init.sh ${WORKING_DIRECTORY}/

@@ -18,7 +18,7 @@
 
 # set base Docker image to AdoptOpenJDK Ubuntu Docker image
 FROM adoptopenjdk/openjdk8:jdk8u192-b12
-MAINTAINER WSO2 Docker Maintainers "dev@wso2.org"
+MAINTAINER Join Treinamentos e Governanca Team "training@jointreinamentos.com.br"
 
 # set user configurations
 ARG USER=wso2carbon
@@ -64,7 +64,7 @@ COPY --chown=wso2carbon:wso2 ${FILES}/scala_parser_combinators_2.11_1.0.4_1.0.0.
 COPY --chown=wso2carbon:wso2 ${FILES}/zkclient_0.8_1.0.0.jar ${WSO2_SERVER_HOME}/lib/
 COPY --chown=wso2carbon:wso2 ${FILES}/zookeeper_3.4.6_1.0.0.jar ${WSO2_SERVER_HOME}/lib/
 # copy mysql connector jar to the server as a third party library
-COPY --chown=wso2carbon:wso2 ${FILES}/mysql-connector-java-*-bin.jar ${WSO2_SERVER_HOME}/lib/
+COPY --chown=wso2carbon:wso2 ${FILES}/mysql-connector-java-*.jar ${WSO2_SERVER_HOME}/lib/
 
 # set the user and work directory
 USER ${USER_ID}
